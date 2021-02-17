@@ -7,7 +7,7 @@ import image3 from '../images/besos.gif';
 class MediaList extends React.Component {
   render() {
     return (
-      <ul className="section-cats_list">
+      <ul className="App-cardList">
         <li>
           <MediaCard
             name="Rajesh Patel"
