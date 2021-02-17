@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 class MediaCard extends React.Component {
   render() {
     let heartElement;
@@ -10,14 +10,22 @@ class MediaCard extends React.Component {
     }
 
     return (
-      <section className="App-section1">
-        <h2 className="App-name">{this.props.name}</h2>
-        <h3 className="App-date">{this.props.date}</h3>
-        <img src={this.props.image} className="App-photo" alt="Rajesh" />
-        <p>{this.props.text}</p>
-        <span>{this.props.likes}</span>
-        {heartElement}
-      </section>
+      <article className="App-article">
+        <section className="App-section1">
+          <div className="App-title">
+            <h2 className="App-name">{this.props.name}</h2>
+            <h3 className="App-date">{this.props.date}</h3>
+          </div>
+        </section>
+        <section>
+          <img src={this.props.image} className="App-photo" alt="Portrait" />
+          <p>{this.props.text}</p>
+        </section>
+        <section className="App-footer">
+          <span className="App-likes">{this.props.likes}</span>
+          {heartElement}
+        </section>
+      </article>
     );
   }
 }
