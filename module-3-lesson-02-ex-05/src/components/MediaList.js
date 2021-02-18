@@ -1,6 +1,6 @@
 import React from 'react';
 import MediaCard from './MediaCard';
-import image1 from '../images/Rajesh.jpg';
+import pepino from '../images/Rajesh.jpg';
 import image2 from '../images/Wisla.jpg';
 import image3 from '../images/besos.gif';
 
@@ -12,7 +12,7 @@ class MediaList extends React.Component {
           <MediaCard
             name="Rajesh Patel"
             date="February 2020"
-            image={image1}
+            image={pepino}
             text="Testing if it works props exercise"
             likes={48}
             heart={false}

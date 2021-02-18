@@ -7,7 +7,7 @@ function renderP() {
 }
 
 const main = (
-  <section>
+  <section className="App-p+func+span">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam
       iste sapiente molestiae dicta. Excepturi voluptas facere eius labore
